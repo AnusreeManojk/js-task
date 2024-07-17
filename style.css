@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+
+
+}
+
+@font-face {
+    font-family: "azurnorms-bold";
+    src: url("fonts/TTNorms-Bold.woff2");
+}
+
+@font-face {
+    font-family: "azure-medium";
+    src: url("fonts/azure-medium.woff2");
+}
+
+@font-face {
+    font-family: "azure-norm";
+    src: url("fonts/azur-norm.woff2");
+}
+
+@font-face {
+    font-family: "segoe-medium";
+    src: url(fonts/latest.woff2);
+}
+
+@font-face {
+    font-family: "mfd-regular";
+    src: url(fonts/mwfmdl2-v3.54.woff);
+}
+
+@font-face {
+    font-family: "segeo-regular";
+    src: url(fonts/latest\(1\).woff2);
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    height: 100%;
+    display: block;
+
+}
+
+#header {
+    /* width: 100%; */
+    padding: 10px 60px;
+    display: flex;
+    box-sizing: border-box;
+    height: 54px;
+    /* align-items: center; */
+    border-bottom: 1px solid #d4d4d4;
+    justify-content: center;
+}
+
+.header-padding {
+    max-width: 1600px;
+    width: 100%;
+    /* height: 54px; */
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    overflow: hidden;
+    box-sizing: border-box;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 0 10px;
+
+}
+
+.header-left {
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+.header-logo {
+    padding-right: 18px;
+    display: block;
+}
+
+.header-logo img {
+    width: 108px;
+    height: 23px;
+
+}
+
+.team-text {
+    display: flex;
+    width: 81.1833px;
+    text-align: center;
+}
+
+.team-text::before {
+    border-left: 2px solid #000;
+    height: 24px;
+    content: " ";
+    margin-left: 7px;
+    margin-top: 1px;
+}
+
+.teams {
+    font-family: "segoe-medium";
+    font-size: 18px;
+    padding: 0 10px;
+
+}
+
+#menu-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    /* width: 100%; */
+}
+
+#menu-list li {
+    /* float: left; */
+    padding: 0px 10px;
+    display: flex;
+    flex-flow: row;
+    font-family: "segeo-regular";
+    font-size: 14px;
+}
+
+#menu-list li a {
+    text-decoration: none;
+    color: black;
+    font-family: "segeo-regular";
+    font-weight: 100;
+
+}
+
+
+#menu-list li img {
+    width: 8px;
+}
+
+#menu-list li:nth-child(2) {
+    font-family: "seago-medium";
+    /* background-color: aqua; */
+
+}
+
+.right-side {
+    display: flex;
+    gap: 20px
+}
+
+.right-side button {
+    /* border-color: aqua; */
+    background-color: white;
+    padding: 0px 8px;
+    border: 1px solid;
+    border-radius: 3px;
+    font-family: "segeo-regular";
+    height: 31px;
+    /* margin: 1px 8px; */
+    /* padding:0px 4px; */
+    font-size: 13px;
+}
+
+.banner-content {
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.bg {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: unset;
+    height: 630px;
+    overflow: hidden;
+    box-sizing: border-box;
+    object-fit: cover;
+    min-height: 580px;
+    width: 100vw;
+    z-index: -30;
+}
+
+.bg img {
+    width: 100% !important;
+    display: block !important;
+    box-sizing: border-box;
+    height: 100%;
+    object-fit: cover;
+    min-height: 580px;
+    /* object-position: center; */
+}
+
+.element-margin {
+    display: flex;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    box-sizing: content-box;
+    position: relative;
+    /* padding-bottom: 6rem; */
+    /* height:100% */
+    height: 630px;
+    align-items: center;
+    /* width: 50%; */
+
+}
+
+/* .empty{
+    width: 50%;
+    display: flex;
+    position: relative;
+} */
+.banner-padding {
+    padding-right: -5px;
+    width: 100%;
+    padding-top: 0;
+    margin-inline: auto;
+    min-height: max-content;
+}
+
+.banner-main {
+    display: flex;
+    flex-flow: column;
+    /* margin-top: 2rem; */
+    text-align: left;
+    justify-content: left;
+    width: 50%;
+
+}
+
+.banner-head {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+.banner-head h1 {
+    font-family: "segeo-regular";
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.6px;
+    font-weight: 200;
+    margin-bottom: 0;
+    color: #0e1726;
+}
+
+.banner-paragraph {
+    display: flex;
+    text-align: left;
+    /* padding-top: 0.75rem; */
+}
+
+.banner-paragraph p {
+    font-family: "segeo-regular";
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    letter-spacing: -0.54px;
+}
+
+.button-padding {
+    /* margin-top: 24px; */
+    display: block;
+}
+
+.button-padding button {
+    background-color: #5d5bd4;
+    display: flex;
+    justify-content: center;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -.02em;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    font-family: "segoe-medium";
+    font-size: 15px;
+    /* height:52px; */
+    color: #fff;
+}
+
+@media screen and (max-width:1183px) {
+    .right-side {
+        display: none;
+    }
+}
+
+@media screen and (max-width:859px) {
+    #menu-list {
+        display: none;
+    }
+
+    .team-text {
+        display: none;
+
+    }
+
+    .header-logo {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .header-padding {
+        justify-content: center;
+    }
+
+    .men-btn {
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+        /* background-color: #5d5bd4; */
+        /* position: absolute; */
+
+    }
+
+    .men-btn img {
+        width: 20px;
+        height: 20px;
+        display: block;
+        /* position: absolute; */
+    }
+    .small-txt{
+        display: flex;
+        position:fixed ;
+        top:80px;
+        width: 100%;
+        background-color: #fff;
+
+    }relative
+    .team-text{
+        position: relative;
+    }
+}
+ 
