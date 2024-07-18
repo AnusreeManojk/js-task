@@ -2,11 +2,11 @@ const microsoft = {
     pageTitle: "Microsoft Teams - Group Chat Software",
 
     header: {
-        menu:"icon/menu-horizontal.svg",
-       
-        logo:  "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+        menu: "icon/menu-horizontal.svg",
 
-        teamtext:"Teams",
+        logo: "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31",
+
+        teamtext: "Teams",
         features: [
             // {
             //    logo:{
@@ -49,26 +49,26 @@ const microsoft = {
                 title: "Support",
                 icon: ""
             },
-            
+
 
         ],
-      
-            downloadButton: {
-                text: "Download Teams",
-                link: "https://www.microsoft.com/en-gb/microsoft-teams/download-app"
-            },
 
-       
-            signinButton: {
-                text: "Sign in",
-                link: "https://teams.microsoft.com/v2/"
-            }
-    
+        downloadButton: {
+            text: "Download Teams",
+            link: "https://www.microsoft.com/en-gb/microsoft-teams/download-app"
+        },
+
+
+        signinButton: {
+            text: "Sign in",
+            link: "https://teams.microsoft.com/v2/"
+        }
+
 
     },
-    smallscreenText:{
-            text:"Teams",
-            icon:"/icon/down-arrow.png"
+    smallscreenText: {
+        text: "Teams",
+        icon: "/icon/down-arrow.png"
     },
 
     banner: {
@@ -77,135 +77,228 @@ const microsoft = {
         subtitle: "Transform the way you work with next-generation AI capabilities and bring together your physical and digital worlds. ",
         actionButton: {
             text: "Download now",
-            link: "https://www.microsoft.com/en-gb/microsoft-teams/download-app#download-for-desktop1"
+            // link: "https://www.microsoft.com/en-gb/microsoft-teams/download-app#download-for-desktop1"
         }
-    }
+    },
+    stickyNav: {
+        stickynavul: [{
 
+            txt: "Featured news",
+            link: ""
+        },
+        {
+            txt: "Solutions",
+            link: ""
+
+        },
+        {
+            txt: "Product and Services",
+            link: ""
+
+        },
+        {
+            txt: "Customer stories",
+            link: ""
+
+        },
+        {
+            txt: "Get started",
+            link: ""
+        }
+    ],
+
+        stickynavbtn: "See plans and pricing",
+
+
+        mobileFeature: "Featured News"
+
+    },
+    main:{
+      section1:{
+        // bgImage:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured-Card-Background-1-1600x742?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=4000&hei=1855&qlt=100&fit=constrain",
+        topHead:"FEATURED NEWS",
+        head:"Discover what’s happening with Teams",
+        itemone:{
+            card1img:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Get-ready-for-the-future-of-work_416x178?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=429&qlt=100&fmt=png-alpha&fit=constrain",
+            card1head:"Prompt like a pro with Microsoft Copilot in Teams",
+            card1discript:"Unlock the full potential of your team's decision-making with prompts for Copilot in Teams. Streamline and transform your meetings - so that every idea is visualized, evaluated, and brought to life.",
+            cardbtnImg:"/icon/arrow_right.png",
+            cardbtnDisc:"Learn more"
+        },
+        itemtwo:{
+            card2img:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Microsoft_Mesh_is_now_available_416x1781?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=429&qlt=100&fmt=png-alpha&fit=constrain",
+            card2head:"Try Microsoft Mesh in Teams",
+            card2discript:"Connect your workforce in new ways with Mesh—avatars and immersive 3D experiences that feel natural, boost engagement, and empower teams. "
+        },
+        itemthree:{
+            card3img:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Microsoft_Microsoft_Teams_Phone_bundles%20_416x178?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=420&qlt=100&fmt=png-alpha&fit=constrain",
+            card3head:"Microsoft Teams Phone",
+            card3discript:"Experience smart communication and seamless collaboration with the only calling solution native to Teams. "
+        }
+        
+      },
+      section2:{
+        topHead:"SOLUTIONS ",
+        head:"Streamline communications—all in one place",
+        secContent:{
+              meet:{
+                meethead:"Meet",
+                meetImg:"/icon/down-arrow.png",
+                meetDisc:"Make meetings more impactful with features like PowerPoint Live, Microsoft Whiteboard, and AI-generated meeting notes.2",
+                meebtn:"Learn more"
+
+              }
+
+        }
+
+      }
+    }
 }
 document.addEventListener('DOMContentLoaded', function () {
 
     function buildTeamsPage() {
         document.title = microsoft.pageTitle
+        const headerleft = document.getElementById("header-left")
 
-        const container=document.getElementById("container")
-       
-        const headerElement = document.getElementById("header");
-        // containers.appendChild(headerElement)
-        
-        const headerPadding=document.getElementById("header-padding")
-        const headerleft=document.createElement("div")
-        headerPadding.appendChild(headerleft)
-        headerleft.classList.add("header-left")
+        const menuImg = document.getElementById("menu-img")
+        menuImg.src = microsoft.header.menu
 
-
-       const menuBtn=document.createElement("div")
-       menuBtn.classList.add("menu-btn")
-       const menuImg=document.createElement("img")
-       menuImg.src=microsoft.header.menu
-
-       headerleft.appendChild(menuBtn)
-       menuBtn.appendChild(menuImg)
-
-        const header_logo=document.createElement("div")
-        header_logo.classList.add("header-logo")
-        headerleft.appendChild(header_logo)
-        const imgElement = document.createElement("img");
+        const header_logo = document.getElementById("header-logo")
+        const imgElement = document.getElementById("logo-img");
         // console.log(microsoft.header.logo)
-         imgElement.src=microsoft.header.logo
-         console.log(imgElement)
-         header_logo.appendChild(imgElement)
-        // imgElement.src=
-        const teamText=document.createElement("div")
-        teamText.classList.add("team-text")
+        imgElement.src = microsoft.header.logo
+        const teams = document.getElementById("teams")
+        teams.innerHTML = microsoft.header.teamtext
 
-        const teams=document.createElement("span")
-        teams.classList.add("teams")
-        teams.innerHTML=microsoft.header.teamtext
-    
-        headerleft.appendChild(teamText)
-        teamText.appendChild(teams)
-
-         
         const menuList = document.getElementById("menu-list")
-       headerleft.appendChild(menuList)
+        // headerleft.appendChild(menuList)
         microsoft.header.features.forEach(item => {
-             const menuItem=document.createElement('li')
-             menuItem.innerHTML=
-             `<a href="${item.link}">
+            const menuItem = document.createElement('li')
+            menuItem.innerHTML =
+                `<a href="${item.link}">
              ${item.title} 
              <img src="${item.icon}"></a>`
-            
+
             menuList.appendChild(menuItem)
         });
 
-        const rightside=document.createElement("div");
-        headerPadding.appendChild(rightside)
-        rightside.classList.add("right-side")
+        const downloadbtn = document.getElementById('download-btn')
+        downloadbtn.innerHTML = microsoft.header.downloadButton.text
+        const signinbtn = document.getElementById('signin-btn')
+        signinbtn.innerHTML = microsoft.header.signinButton.text
 
-        const downloadbtn=document.createElement('button')
-        downloadbtn.innerHTML=microsoft.header.downloadButton.text
-        rightside.appendChild(downloadbtn)
-        const signinbtn=document.createElement('button')
-        signinbtn.innerHTML=microsoft.header.signinButton.text
-        rightside.appendChild(signinbtn)
+        // smallscree
+        const teamtxt = document.getElementById("txt")
+        teamtxt.innerHTML = microsoft.smallscreenText.text
+        const txtImg = document.getElementById("txt-img")
+        txtImg.src = microsoft.smallscreenText.icon
+        // banner starts 
+        const backgroundImage = document.getElementById("backgroundImage")
+        backgroundImage.src = microsoft.banner.backgroundimage
 
-// smallscree
-     const smallteamtxt=document.createElement("div")
-     smallteamtxt.classList.add("small-txt")
-     container.appendChild(smallteamtxt)
-     const teamtxt=document.createElement("div")
-     teamtxt.innerHTML=microsoft.smallscreenText.text
-     smallteamtxt.appendChild(teamtxt)
+        const head = document.getElementById("head")
+        head.innerHTML = microsoft.banner.title
 
-    // banner starts 
-        const banner=document.getElementById("banner-content")
-        const background=document.createElement("div")
-        background.classList.add("bg")
+        const paragraph = document.getElementById("paragraph")
+        paragraph.innerHTML = microsoft.banner.subtitle
+        const headBtn = document.getElementById("head-btn")
+        headBtn.innerHTML = microsoft.banner.actionButton.text
+        headBtn.addEventListener('click', function () {
+            const url = 'https://www.microsoft.com/en-gb/microsoft-teams/download-app#download-for-desktop1'
+            window.location.href = url
+        })
 
-        
-        const backgroundImage=document.createElement("img")
-        backgroundImage.src=microsoft.banner.backgroundimage
-       
-        banner.appendChild(background)
-        background.appendChild(backgroundImage)
+        const mobileHide = document.getElementById("mobile-hide")
+        microsoft.stickyNav.stickynavul.forEach(item => {
+            const stickyItem = document.createElement("li")
+            stickyItem.innerHTML =
+                `<a href"${item.link}">
+            ${item.txt}</a>`
+            mobileHide.appendChild(stickyItem)
+        })
+        const stickynavBtn = document.getElementById("sticky-btn")
+        stickynavBtn.innerHTML = microsoft.stickyNav.stickynavbtn
 
-         const bannerElements=document.createElement("div")
-         bannerElements.classList.add("element-margin")
-         banner.appendChild(bannerElements)
+        stickynavBtn.addEventListener('click',function(){
+            const url='https://www.microsoft.com/en-us/microsoft-teams/compare-microsoft-teams-business-options'
+            window.location.href = url
 
-         const bannerPadding=document.createElement("div")
-         bannerPadding.classList.add("banner-padding")
-         bannerElements.appendChild(bannerPadding)
-         
-         const bannerMain=document.createElement("div")
-         bannerMain.classList.add("banner-main")
-         bannerPadding.appendChild(bannerMain)
+        })
+        const mobileSpan = document.getElementById("hide-span")
+        mobileSpan.innerHTML = microsoft.stickyNav.mobileFeature
 
-         const bannerHead=document.createElement("div")
-         bannerHead.classList.add("banner-head")
-         const head=document.createElement("h1")
-        head.innerHTML=microsoft.banner.title
-         bannerMain.appendChild(bannerHead)
-         bannerHead.appendChild(head)
-         
-        //  const empty=document.createElement("div")
-        //  empty.classList.add("empty")
-        //  banner.appendChild(empty)
+        // section1
+        const tophead=document.getElementById("top-head")
+        tophead.innerHTML=microsoft.main.section1.topHead
+        const head1=document.getElementById("h2")
+        head1.innerHTML=microsoft.main.section1.head
 
-        const headParagraph=document.createElement("div")
-         headParagraph.classList.add("banner-paragraph")
-         bannerMain.appendChild(headParagraph)
-         const paragraph=document.createElement("p")
-         paragraph.innerHTML=microsoft.banner.subtitle
-         headParagraph.appendChild(paragraph)
+        // card one
+        const item1img=document.getElementById("card-img1")
+        item1img.src=microsoft.main.section1.itemone.card1img
+        const item1head=document.getElementById("head1")
+        item1head.innerHTML=microsoft.main.section1.itemone.card1head
+        const item1Disc=document.getElementById("cardDisc1")
+        item1Disc.innerHTML=microsoft.main.section1.itemone.card1discript
+        const item1btn=document.getElementById("cardbtn")
+        item1btn.src=microsoft.main.section1.itemone.cardbtnImg
+        const itemBtnDisc=document.getElementById("btnDisc")
+        itemBtnDisc.innerHTML=microsoft.main.section1.itemone.cardbtnDisc
+        item1btn.addEventListener('click',function(){
+            const url='https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/prompt-like-a-pro-with-microsoft-copilot-in-teams/ba-p/4141986'
+            window.location.href = url
 
-         const buttonPadding=document.createElement("div")
-         buttonPadding.classList.add("button-padding")
-         const headBtn=document.createElement("button")
-         headBtn.innerHTML=microsoft.banner.actionButton.text
+        })
+      
+        // card2
+        const item2img=document.getElementById("card-img2")
+        item2img.src=microsoft.main.section1.itemtwo.card2img
+        const item2head=document.getElementById("head2")
+        item2head.innerHTML=microsoft.main.section1.itemtwo.card2head
+        const item2Disc=document.getElementById("cardDisc2")
+        item2Disc.innerHTML=microsoft.main.section1.itemtwo.card2discript
+        const item2btn=document.getElementById("cardbtn2")
+        item2btn.src=microsoft.main.section1.itemone.cardbtnImg
+        const item2BtnDisc=document.getElementById("btnDisc2")
+        item2BtnDisc.innerHTML=microsoft.main.section1.itemone.cardbtnDisc
+        item2btn.addEventListener('click',function(){
+            const url='https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh'
+            window.location.href = url
 
-         bannerMain.appendChild(buttonPadding)
-         buttonPadding.appendChild(headBtn)
+        })
+        // card3
+        const item3img=document.getElementById("card-img3")
+        item3img.src=microsoft.main.section1.itemthree.card3img
+        const item3head=document.getElementById("head3")
+        item3head.innerHTML=microsoft.main.section1.itemthree.card3head
+        const item3Disc=document.getElementById("cardDisc3")
+        item3Disc.innerHTML=microsoft.main.section1.itemthree.card3discript
+        const item3btn=document.getElementById("cardbtn3")
+        item3btn.src=microsoft.main.section1.itemone.cardbtnImg
+        const item3BtnDisc=document.getElementById("btnDisc3")
+        item3BtnDisc.innerHTML=microsoft.main.section1.itemone.cardbtnDisc
+        item3btn.addEventListener('click',function(){
+            const url='https://www.microsoft.com/en-us/microsoft-teams/microsoft-teams-phone'
+            window.location.href = url
+
+        })
+
+    //   section2
+    const Tophead=document.getElementById("top-head2")
+    Tophead.innerHTML=microsoft.main.section2.topHead
+    const head2=document.getElementById("s2h2")
+    head2.innerHTML=microsoft.main.section2.head
+    
+    const meethead=document.getElementById("meetH3")
+    meethead.innerHTML=microsoft.main.section2.secContent.meet.meethead
+    const meetImg=document.getElementById("meet-img")
+    meetImg.src=microsoft.main.section2.secContent.meet.meetImg
+    const meetdisc=document.getElementById("meet-disc")
+    meetdisc.innerHTML=microsoft.main.section2.secContent.meet.meetDisc
+    const meetbtn=document.getElementById("meet-btn")
+    meetbtn.innerHTML=microsoft.main.section2.secContent.meet.meebtn
     }
+
     buildTeamsPage()
 })
+

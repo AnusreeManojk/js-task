@@ -1,7 +1,7 @@
 body {
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 
 
 }
@@ -38,7 +38,7 @@ body {
 
 .container {
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     height: 100%;
     display: block;
@@ -104,7 +104,7 @@ body {
     margin-top: 1px;
 }
 
-.teams {
+#teams {
     font-family: "segoe-medium";
     font-size: 18px;
     padding: 0 10px;
@@ -173,15 +173,15 @@ body {
 
 .bg {
     display: block;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     transform: unset;
-    height: 630px;
+    max-height: 630px;
     overflow: hidden;
     box-sizing: border-box;
     object-fit: cover;
-    min-height: 580px;
+    /* min-height: 580px; */
     width: 100vw;
     z-index: -30;
 }
@@ -192,21 +192,19 @@ body {
     box-sizing: border-box;
     height: 100%;
     object-fit: cover;
-    min-height: 580px;
-    /* object-position: center; */
+    /* min-height: 580px; */
+    object-position: center;
 }
 
 .element-margin {
     display: flex;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
-    box-sizing: content-box;
-    position: relative;
+    padding: 5% 5%;
+    position: absolute;
     /* padding-bottom: 6rem; */
-    /* height:100% */
     height: 630px;
-    align-items: center;
-    /* width: 50%; */
+    width: 100%;
+    box-sizing: border-box;
+    top: 0;
 
 }
 
@@ -216,11 +214,15 @@ body {
     position: relative;
 } */
 .banner-padding {
-    padding-right: -5px;
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
     width: 100%;
     padding-top: 0;
     margin-inline: auto;
     min-height: max-content;
+    max-width: 1328px;
+    margin-top: 3rem;
+
 }
 
 .banner-main {
@@ -266,6 +268,8 @@ body {
 .button-padding {
     /* margin-top: 24px; */
     display: block;
+    /* cursor: pointer; */
+
 }
 
 .button-padding button {
@@ -279,14 +283,448 @@ body {
     border: none;
     border-radius: 8px;
     font-family: "segoe-medium";
-    font-size: 15px;
     /* height:52px; */
     color: #fff;
+    cursor: pointer;
+}
+
+.small-txt {
+    display: none;
+}
+
+.main-section {
+    overflow: hidden;
+}
+
+.section-nav {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: max-content;
+    overflow-x: hidden;
+}
+
+.sticky-nav {
+    display: flex;
+    flex-flow: row;
+    width: max-content;
+    height: max-content;
+    width: 100%;
+    border-bottom: 1px solid #d4d4d4;
+    border-top: 1px solid #d4d4d4;
+    position: sticky;
+    z-index: 500;
+    top: 0;
+
+}
+
+.stickynav-padding {
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 0 3.5rem;
+}
+
+.nav-content1 {
+    margin: 0.25rem;
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items: left;
+    /* border-bottom: 4px solid #0067b8; */
+    /* margin-top: 8px; */
+    /* padding: 0 3.5rem; */
+    flex: 1;
+
+}
+
+.mobile-hide {
+    text-align: left;
+    left: 0;
+    right: auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: left;
+    align-items: left;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 6px;
+    margin-left: -5px;
+    column-gap: 3rem;
+    margin: 0;
+
+}
+
+.mobile-hide li {
+    font-family: "segoe-medium";
+    width: fit-content;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.48px;
+    color: #333275;
+    flex-wrap: wrap;
+}
+
+.mobile-hide li:first-child {
+    padding-bottom: 16px;
+    border-bottom: 4px solid #5d5bd4;
+}
+
+.mobile-hide li:last-child {
+    /* padding-right: 0; */
+    padding-bottom: 0;
+    /* display: none; */
+
+}
+
+.hide-span {
+    display: none;
+}
+
+.arrow {
+    display: none;
+}
+
+.nav-content2 {
+    display: flex;
+    align-items: right;
+}
+
+.nav-content2 button {
+    width: max-content;
+    background-color: #5d5bd4;
+    display: flex;
+    justify-content: center;
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    letter-spacing: -.02em;
+    padding: 10px 18px 12px;
+    border: none;
+    border-radius: 8px;
+    font-family: "segoe-medium";
+    /* height:52px; */
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.main-section {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    /* background-color: #333275; */
+}
+
+.mainsection-padding {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    justify-content: center;
+    display: flex;
+
+
+}
+
+.section1-bg {
+    /* background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured-Card-Background-1-1600x742?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=4000&hei=1855&qlt=100&fit=constrain); */
+    background-image: url(https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured-Card-Background-1-1600x742?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=4000&hei=1855&qlt=100&fit=constrain);
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+
+}
+
+.section {
+    /* max-width: 1328px; */
+    max-width: 1328px;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 90%;
+    box-sizing: content-box;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-head {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
+    padding-bottom: 24px;
+    gap:10px
+}
+
+.top-head {
+    font-family: "segoe-medium";
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.96px;
+    color: #5d5bd4;
+}
+
+.content-head h2 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    font-family: "segeo-regular";
+    margin: 0;
+}
+
+.section1 {
+    padding-top: 20px;
+    margin-left: -12px;
+    padding-right: .25rem;
+    padding-left: .25rem;
+    margin-top: 1px;
+    box-sizing: content-box;
+}
+
+.section1-padding {
+    padding-left: 8px;
+    padding-right: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    /* overflow: hidden; */
+}
+
+.section1-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    column-gap: 2rem;
+    box-shadow: 0 0 0.125rem rgb(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.14);
+    height: 100%;
+    border: 0.0625rem solid #e6f2fb;
+    border-radius: 16px;
+}
+
+.cardtop-padding {
+    padding: 8px 8px 0 8px;
+    display: block;
+}
+
+.card-img {
+    border-radius: 8px;
+    display: flex;
+    width: inherit;
+    height: auto;
+}
+
+.card-img img {
+    border-radius: 16px;
+    max-width: 100%;
+    object-fit: cover;
+    display: flex;
+    height: auto;
+}
+
+.card-content {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+   flex-flow: column;
+}
+
+.card-cnt-padding {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    /* gap: 0.75rem; */
+    flex-flow: column;
+    width: 100%;
+    height: inherit;
+    justify-content: space-between;
+
+}
+
+.card-head {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    /* margin-top: 10px; */
+}
+
+.card-head h3 {
+    font-family: "segoe-medium";
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.54px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.card-descript {
+    padding-right: 24px;
+}
+
+.card-descript p {
+    font-family: "segeo-regular";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    font-weight: 400;
+}
+
+.card-footer {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    bottom: 0;
+
+}
+
+.card-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34.7px;
+    height: 35px;
+    background-color: #5d5bd4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-btn img {
+    width: 14.7px;
+    height: 15px;
+    filter: invert(1);
+}
+
+.card-footer p {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.48px;
+    color: #333275;
+    font-family: "segoe-medium";
+    margin: 0;
+    cursor: pointer;
+
+}
+.section2-cont{
+    margin-top: 24px;
+}
+.meet{
+    width: 100%;
+    border-left: 4px solid #5d5bd4;
+    padding: 2rem 0;
+}
+.meet-content{
+    margin-left: 40px;
+}
+.meet-head{
+    width: 100%;
+  display: flex;
+  text-align: left;
+  cursor: pointer;
+  align-items: center;
+  justify-content: left;
+  gap:10px
+}
+.meet-head h3{
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "segoe-medium";
+    text-align: left;
+  font-weight: 400;
+  color: #0e1726;
+}
+.meet-head img{
+    width: 16px;
+  height: 16px;
+}
+.meet-item{
+    display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-sizing: border-box;
+  padding-top: 1.5rem;
+}
+.meet-disc p{
+    display: block;
+    font-family: "segeo-regular";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.48px;
+  color:#17253d ;
+}
+.meet-btn span{
+    font-size: 14px;
+    line-height: 20px;
+    font-family: "segoe-medium";
+    color:#383778 ;
+
+}
+
+@media screen and (max-width:1440px) {
+    .content-head h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+    .section{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
 }
 
 @media screen and (max-width:1183px) {
     .right-side {
         display: none;
+    }
+
+    .small-txt {
+        display: none;
+    }
+
+    .bg {
+        height: 612px;
+    }
+}
+
+@media screen and(max-width:914px) {
+    .mobile-hide li:last-child {
+        /* padding-right: 0; */
+        padding-top: 10px;
+        padding-bottom: 0;
+
+    }
+
+    .nav-content2 button {
+        height: 100%;
+        padding: 0.5rem 1rem;
+    }
+
+    .mobile-hide {
+        margin-bottom: 1rem;
+    }
+    .section{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
 }
 
@@ -310,34 +748,207 @@ body {
         justify-content: center;
     }
 
-    .men-btn {
+    .menu-btn {
         width: 48px;
         height: 48px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width:100%;
-        /* background-color: #5d5bd4; */
-        /* position: absolute; */
+        width: 100%;
 
     }
 
-    .men-btn img {
+    .menu-btn img {
         width: 20px;
         height: 20px;
         display: block;
         /* position: absolute; */
     }
-    .small-txt{
+
+    .small-txt {
         display: flex;
-        position:fixed ;
-        top:80px;
+        /* position: fixed; */
+        top: 55px;
         width: 100%;
         background-color: #fff;
+        height: 34px;
+        box-sizing: border-box;
+        padding: 0 5px;
+        align-items: center;
+        flex-flow: row;
+        border-bottom: 1px solid #d4d4d4;
 
-    }relative
-    .team-text{
+    }
+
+    .txt {
+        font-family: "segoe-medium";
+        font-size: 16px;
+        padding: 0 10px;
+        letter-spacing: -0.6px;
+        margin-top: -3px;
+
+    }
+
+    #txt-img {
+        width: 18px;
+        align-items: center;
+        display: flex;
+        margin-top: 2px;
+    }
+
+    .banner-content {
+        display: flex;
+        flex-flow: column;
+        padding-bottom: 3rem;
+    }
+
+    .bg {
+        position: relative;
+        min-height: max-content;
+        /* max-height: 407.785px; */
+        /* height: 100%; */
+        display: flex;
+        flex-flow: column;
+    }
+
+    .element-margin {
+        padding: 0;
+        height: max-content;
         position: relative;
     }
+
+    .banner-padding {
+        margin-top: 0;
+        padding: 0 4rem;
+        /* padding-bottom: 2rem; */
+
+    }
+
+    .banner-main {
+        width: 100%;
+    }
+
+    .banner-head h1 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1.6px;
+        font-weight: 200;
+        margin-bottom: 0;
+        color: #0e1726;
+    }
+
+    .banner-paragraph p {
+        font-size: 16px;
+
+        line-height: 28px;
+        letter-spacing: -0.54px;
+    }
+
+    .bg img {
+        min-height: max-content;
+    }
+
+    .mobile-hide li:last-child {
+        /* padding-right: 0; */
+        padding-top: 10px;
+        padding-bottom: 0;
+
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+
+    .stickynav-padding {
+        padding: 5px;
+    }
+
+    .nav-content1 {
+        width: 100%;
+        border-bottom: 4px solid #5d5bd4;
+
+    }
+
+    .hide-span {
+        display: flex;
+        font-family: "segoe-medium";
+        line-height: 22px;
+        letter-spacing: -0.48px;
+        color: #333275;
+        width: 100%;
+        padding-bottom: 10px;
+        font-size: 12px;
+        margin-left: 5px;
+
+    }
+
+    .section {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+
+    .section1-padding {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .section1 {
+        margin-right: -.25rem;
+        /* margin-right: .25rem; */
+    }
+    .card-content{
+        padding: 1rem;
+    }
+    .card-head{
+        margin-top: 0;
+    }
+    .card-head h3{
+        margin: 0;
+    }
+    .card-content-padding {
+        gap:0
+
+    }
+
 }
- 
+
+@media screen and (max-width:539px) {
+    .banner-padding {
+        margin-top: 0;
+        padding: 0 1rem;
+    }
+
+    .button-padding {
+        width: 100%;
+    }
+
+    .button-padding button {
+        width: 100%;
+        /* padding: 0; */
+        
+
+    }
+
+    .section {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .section1 {
+        margin-right: -.5rem;
+        /* margin-right: .25rem; */
+    }
+    .card-content{
+        padding: 1rem;
+    }
+    .card-head{
+        margin-top: 0;
+    }
+    .card-head h3{
+        margin: 0;
+    }
+    .card-content-padding {
+        gap:0
+
+    }
+}
+
