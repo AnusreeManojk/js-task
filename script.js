@@ -223,7 +223,7 @@ const microsoft = {
                 {
                     gridimg: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Icon-Teams-28x281?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
                     gridHead: "Teams Rooms",
-                    gridDiscript: "Strengthen hybrid work with enhanced ",
+                    gridDiscript: "Strengthen hybrid work with enhanced meeting experiences for every space. ",
                     linkimg: "/icon/arrow_right.png",
                     linkTxt: "Learn more"
                 },
@@ -236,16 +236,90 @@ const microsoft = {
                 }
             ]
         },
-        section4:{
-            contentLeft:[{
-                top:" Research insights ",
-                leftHead:"The Total Economic ImpactTM of Microsoft Teams",
-                leftTxt:"Read a commissioned study conducted by Forrester Consulting to learn about potential cost savings and business benefits of Teams. ",
-                leftbtn:"Read the study"
-            }],
-            contentRightimg:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/1-Up-Card-Media_656x470?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=656&hei=473&qlt=100&fmt=png-alpha&fit=stretch"
+        section4: {
+            contentLeft: {
+                top: " Research insights ",
+                leftHead: "<span>The Total Economic Impact  <sup>TM</sup> of Microsoft Teams</span>",
+                leftTxt: "Read a commissioned study conducted by Forrester Consulting to learn about potential cost savings and business benefits of Teams. ",
+                leftbtn: "Read the study"
+            },
+            contentRightimg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/1-Up-Card-Media_656x470?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=656&hei=473&qlt=100&fmt=png-alpha&fit=stretch"
 
+        },
+        section5: {
+            sect5headTop: "customer stories ",
+            sec5Head: "See how customers are innovating with Teams",
+            sec5Left: {
+                leftimg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Customer_Stories_Logo_GoNarrative_135x58?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=160&hei=68&qlt=100&fmt=png-alpha&fit=constrain",
+                leftDiscript: '"Without a doubt, the fluid collaboration that Teams enables has a positive impact on our ability to be responsive and focus on the work to be done."',
+                leftAuthor: "Matthew Woodget, CEO of Go Narrative ",
+                leftsubhead: "Products",
+                leftIcon: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/Icon-Teams-28x281?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=100",
+                iconSpan: "Teams ",
+                leftButton: "Ready the story"
+
+            },
+            sec5rightImg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Customer_Stories_GoNarrative_656x449?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=656&hei=448&qlt=95&fmt=png-alpha&fit=constrain",
+            btnimg: [
+                "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Customer_Stories_Logo_GoNarrative_135x58?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=168&hei=89&qlt=100&fit=constrain",
+                "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Customer_Stories_Logo_ABN-AMRO_135x58?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=168&hei=89&qlt=100&fit=constrain",
+                "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Customer_Stories_Logo_REI_135x58?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=168&hei=89&qlt=100&fit=constrain",
+                "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Customer_Stories_Logo_LOreeal_135x58?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=168&hei=89&qlt=100&fit=constrain",
+            ],
+            circleBtn:
+                "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8eIB0ABwAABQAAAACfn56jpKIbHRrDw8MZHBjMzMzAwcAbHhrExcQDCQDS0tIVGBQKDgi4ubjl5eVxcnEQEw/29vbe396ur66YmJdeX13Z2di1trUlJyRRUlFlZmRERkQ5Ozg0NjN4eXhTVFLuQuL+AAADfUlEQVR4nO2dbU/bQBCE/XLFdvxSO06CAwQI9P//xiaASiDjVqrOWt3cPN8jzeh2vbt3ji9JhBBCCCGEEEIIIYQQQgghhBBC/AfjtN9Po7WK5Rg3znWdc3f31koWYlUN6Rtb92CtZRFKV6QfFK60VrMA9afBNK0OO2s93qmzC4Np6iZrQb5p3ReDaf9orcgz3w2eFtFakl/qK4NkDr/l4NvTdLAW5ZPyegXT7ZO1Ko8gg6mrrWX5o86Bwf7ZWpY/StdcG6yGW2td3oAhWnU/rXV5A5SJ8wqurHV5A5QJLoMwRIucx+B1q3ZeQaccDIYyQ2WiIzLIXiawwZzHIH2ZaFGrVjgegzhEM6IQZS8T9DmIW7WM3KBatYAoc7VqYYNDlMkge5mAAy9Tq4YnerVq4UCfg2rVQqeGnQxViCKDRBu/atVCJ9IyQd+qMW38qlULHJyD9FsWTDmI3pOptkwrqMOXsFGZCB3692T4J3r2HNThS+jgEGWqg+xlgv7wRa1a6NDnoA5fQqeGA++BxyCc6NP+6eZHwEzt7sIgCNGzxSxknHOb8e8Gw2d4LwX3AwpRDqrh/Cg59tY6FqQ/JsnaWatYFLdONsxLeFrETfLC+ph5p3hJrCUszYF+DY/JZmstYlG2r/TP0pK8Hm4f33oa3kzs+1vqvrTpio/5D+6xpefZIg+Y02zx+md+atGR9mk+nG4C5qG9/JRTiSwWKc+MH8FmcBwWO7QZRXSsFsE7UHEEKn5NqLXW5ZGyQ6s4MFmMIlD5LaJDNrJcxEWDyWIMgYosNlyBCotGRmURByqTxZlA5cpF/gYO1cWGKhcjeKLO1EUqi+ijcw3V99bhm25NzmQxhkDFFom+gzzTwHFZxKvIlYuwu4nAIlOgwj9bcllU0WCghMc2VBZhA8dlcSZQVTSCoo62gWOyGEHRaNFfaAu3ttblkZmiwWQxhkDFm4xMqzhTNKgsKhcJgA0cWS7CYxsqi7CBa8gClX8V8bENk0V8bENlcaZoyGJQzDRwTLdyx9vAcVmEUz/TX1HwXbJHa1k+wfcBM8UpvtP5zlqVV9C93J21KL/Q360OikbD5vDKYv/LWpF3vuWim6wF+edLLlaH3b9/ERwXRYPr4PSTVTN8FMOMabq4ZNw413XO3d1bK1mOcdrvp9FahRBCCCGEEEIIIYQQQgghhBBCRMtv7PxEggm3iH4AAAAASUVORK5CYII="
+            
+        },
+        section6:{
+           sec6headTop:" GET STARTED",
+           sec6head:"Take the next step with Teams",
+           sec6Grid:[
+            {
+                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Business_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                grid6Head:" For business",
+                grid6Content:"Grow your customer base with communications software designed for up to 300 employees.",
+                gridbtn:"/icon/arrow_right.png",
+                gridbtnSpan:"See plans and pricing"
+
+            },
+            {
+                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Personal_Use_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                grid6Head:"For personal use",
+                grid6Content:"Plan events, share photos, and connect with your friends, family, and community. ",
+                gridbtn:"/icon/arrow_right.png",
+                gridbtnSpan:"Try Teams for free"
+
+            },
+            {
+                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Enterprise_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                grid6Head:"For enterprise",
+                grid6Content:"Achieve more with Teams accounts for more than 300 people.",
+                gridbtn:"/icon/arrow_right.png",
+                gridbtnSpan:"Get Started "
+
+            },
+            {
+                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Education_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                grid6Head:" For education",
+                grid6Content:"Make learning collaborative—for both students and educators. ",
+                gridbtn:"/icon/arrow_right.png",
+                gridbtnSpan:"Learn more"
+
+            }
+           
+           ]
+        },
+        footerPrev:{
+            preavTop:"<a>[1]</a> AI-generated meeting notes are currently available in <a>Microsoft Teams Premium </a> only. ",
+            prevBot:{
+              prevTxt:"Follow Microsoft Teams",
+              prevImg1:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter-34?scl=1",
+              prevImg2:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Instagram%202x?scl=1",
+              prevImg3:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube%202x?scl=1",
+              prevImg4:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blog?scl=1"
+            }
         }
+
 
 
     }
@@ -435,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
 
-        // content 3 mai
+        // content 3 main
         const imgContent3 = document.querySelector(".img-content3")
         const section3Img = document.createElement("div")
         section3Img.classList.add("shadow-img")
@@ -468,31 +542,130 @@ document.addEventListener('DOMContentLoaded', function () {
         })
 
         // section4
-        const section4=document.querySelector(".section4-content")
-        // const section4Content=document.createElement("div")
-        // section4Content.classList.add("section4-content")
-
-       microsoft.main.section4.contentLeft.forEach(item=>{
-        const contentLeft=document.createElement("div")
+        const section4 = document.querySelector(".section4-content")
+        const contentLeft = document.createElement("div")
         contentLeft.classList.add("content-left")
-          contentLeft.innerHTML=`<p>${item.top}</p><h4>${item.leftHead}</h4><p>${item.leftTxt}</p><button>${item.leftbtn}</button>`
-
         section4.appendChild(contentLeft)
+        const topleft = document.createElement("p")
+        topleft.innerHTML = microsoft.main.section4.contentLeft.top
+        contentLeft.appendChild(topleft)
 
-       })
-      
-       const section4right=document.createElement("div")
-       section4right.classList.add("content-right")
-       section4.appendChild(section4right)
-       const rightImg=document.createElement("img")
-       rightImg.src=microsoft.main.section4.contentRightimg
-       section4right.appendChild(rightImg)
+        const headfirst = document.createElement("h4")
+        headfirst.innerHTML = microsoft.main.section4.contentLeft.leftHead
+        contentLeft.appendChild(headfirst)
+        const headtxt = document.createElement("p")
+        headtxt.innerHTML = microsoft.main.section4.contentLeft.leftTxt
+        contentLeft.appendChild(headtxt)
+        const leftbtn = document.createElement("button")
+        leftbtn.innerHTML = microsoft.main.section4.contentLeft.leftbtn
+        contentLeft.appendChild(leftbtn)
+
+
+        const section4right = document.createElement("div")
+        section4right.classList.add("content-right")
+        section4.appendChild(section4right)
+        const rightImg = document.createElement("img")
+        rightImg.src = microsoft.main.section4.contentRightimg
+        section4right.appendChild(rightImg)
+
+
+        // content 5
+        const sec5top = document.getElementById("top-head5")
+        sec5top.innerHTML = microsoft.main.section5.sect5headTop
+
+        const sec5head = document.getElementById("content-head5")
+        const headMain = document.createElement("h2")
+        headMain.innerHTML = microsoft.main.section5.sec5Head
+        sec5head.appendChild(headMain)
+
+        const sec5Content = document.getElementById("section5-content")
+        const sec5left = document.createElement("div")
+        sec5left.classList.add("section5-left")
+        sec5Content.appendChild(sec5left)
+
+        const sec5topBtn = document.createElement("div")
+        sec5topBtn.classList.add("sec5-img")
+        sec5topBtn.innerHTML = `<img src=${microsoft.main.section5.sec5Left.leftimg}>`
+        sec5left.appendChild(sec5topBtn)
+
+        const sec5Txt = document.createElement("div")
+        sec5Txt.classList.add("left-string")
+        sec5Txt.innerHTML = `<p>${microsoft.main.section5.sec5Left.leftDiscript}</p>`
+        sec5left.appendChild(sec5Txt)
+
+        const midspan = document.createElement("span")
+        midspan.innerHTML = microsoft.main.section5.sec5Left.leftAuthor
+        sec5left.appendChild(midspan)
+
+        const subhead = document.createElement("p")
+        //    subhead.classList.add("sub-head")
+        subhead.innerHTML = microsoft.main.section5.sec5Left.leftsubhead
+        sec5left.appendChild(subhead)
+
+        const iconspan = document.createElement("div")
+        iconspan.classList.add("icon-span")
+        iconspan.innerHTML = `<img src=${microsoft.main.section5.sec5Left.leftIcon}>${microsoft.main.section5.sec5Left.iconSpan}`
+        sec5left.appendChild(iconspan)
+
+        const sec5leftBtn = document.createElement("button")
+        sec5leftBtn.innerHTML = microsoft.main.section5.sec5Left.leftButton
+        sec5left.appendChild(sec5leftBtn)
+
+        const section5right = document.createElement("div")
+        section5right.classList.add("section5-right")
+        sec5Content.appendChild(section5right)
+
+        const sec5Img = document.createElement("img")
+        sec5Img.src = microsoft.main.section5.sec5rightImg
+        section5right.appendChild(sec5Img)
+
+
+        const sec5ImgBtn = document.querySelector(".section5-bottom")
+        microsoft.main.section5.btnimg.forEach(item => {
+            const btnitem = document.createElement("div")
+            btnitem.classList.add("btn-item")
+            btnitem.innerHTML = `<img src=${item}>`
+            sec5ImgBtn.appendChild(btnitem)
+
+            // const rndBtn2=document.createElement("button")
+            // rndBtn2.src=microsoft.main.section5.circleBtn
+
+
+        })
+        const roundBtn = document.querySelector(".desktop-hide")
+        const rndBtn1 = document.createElement("button")
+        rndBtn1.innerHTML = `<img src=${microsoft.main.section5.circleBtn}>`
+        roundBtn.appendChild(rndBtn1)
+
+        const rndBtn2=document.createElement("button")
+         rndBtn2.innerHTML=`<img src=${microsoft.main.section5.circleBtn}>`
+         roundBtn.appendChild(rndBtn2)
+
+
+
+        //  section6
+        const sec6topHead=document.getElementById("top-head6")
+        sec6topHead.innerHTML=microsoft.main.section6.sec6headTop
+        const sec6Head=document.getElementById("content-head6")
+        sec6Head.innerHTML=microsoft.main.section6.sec6head
+
+        const section6grid=document.querySelector(".section6-grid")
+        microsoft.main.section6.sec6Grid.forEach(item=>{
+            const gridcard=document.createElement("div")
+            gridcard.classList.add("card")
+            gridcard.innerHTML=
+            `<div><div class="icon-img"> <img src="${item.topicon}"></div>
+            <h4>${item.grid6Head}</h4> <p>${item.grid6Content}</p></div>
+            <div><button><img src=${item.gridbtn}></button>${item.gridbtnSpan}</div>`
+            section6grid.appendChild(gridcard)
+        
+
+            // footerprev
+            const prevtop=document.querySelector(".prev-top")
+            const topCont=document.createElement("div")
+        })
+
     }
-
-
-
-
-
     buildTeamsPage()
 })
 
