@@ -84,7 +84,7 @@ const microsoft = {
         stickynavul: [{
 
             txt: "Featured news",
-            link: ""
+            link: "#features"
         },
         {
             txt: "Solutions",
@@ -93,17 +93,17 @@ const microsoft = {
         },
         {
             txt: "Product and Services",
-            link: ""
+            link: "#products"
 
         },
         {
             txt: "Customer stories",
-            link: ""
+            link: "#customer"
 
         },
         {
             txt: "Get started",
-            link: ""
+            link: "#started"
         }
         ],
 
@@ -118,37 +118,41 @@ const microsoft = {
             // bgImage:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured-Card-Background-1-1600x742?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=4000&hei=1855&qlt=100&fit=constrain",
             topHead: "FEATURED NEWS",
             head: "Discover what’s happening with Teams",
-            itemone: {
-                card1img: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Get-ready-for-the-future-of-work_416x178?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=429&qlt=100&fmt=png-alpha&fit=constrain",
-                card1head: "Prompt like a pro with Microsoft Copilot in Teams",
-                card1discript: "Unlock the full potential of your team's decision-making with prompts for Copilot in Teams. Streamline and transform your meetings - so that every idea is visualized, evaluated, and brought to life.",
-                cardbtnImg: "/icon/arrow_right.png",
-                cardbtnDisc: "Learn more"
-            },
-            itemtwo: {
-                card2img: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Microsoft_Mesh_is_now_available_416x1781?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=429&qlt=100&fmt=png-alpha&fit=constrain",
-                card2head: "Try Microsoft Mesh in Teams",
-                card2discript: "Connect your workforce in new ways with Mesh—avatars and immersive 3D experiences that feel natural, boost engagement, and empower teams. "
-            },
-            itemthree: {
-                card3img: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Microsoft_Microsoft_Teams_Phone_bundles%20_416x178?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=420&qlt=100&fmt=png-alpha&fit=constrain",
-                card3head: "Microsoft Teams Phone",
-                card3discript: "Experience smart communication and seamless collaboration with the only calling solution native to Teams. "
-            }
-
+            cards: [
+                {
+                    cardimg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Get-ready-for-the-future-of-work_416x178?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=429&qlt=100&fmt=png-alpha&fit=constrain",
+                    cardhead: "Prompt like a pro with Microsoft Copilot in Teams",
+                    carddiscript: "Unlock the full potential of your team's decision-making with prompts for Copilot in Teams. Streamline and transform your meetings - so that every idea is visualized, evaluated, and brought to life.",
+                    cardbtnImg: "/icon/arrow_right.png",
+                    cardbtnDisc: "Learn more"
+                },
+                {
+                    cardimg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Microsoft_Mesh_is_now_available_416x1781?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=429&qlt=100&fmt=png-alpha&fit=constrain",
+                    cardhead: "Try Microsoft Mesh in Teams",
+                    carddiscript: "Connect your workforce in new ways with Mesh—avatars and immersive 3D experiences that feel natural, boost engagement, and empower teams. ",
+                    cardbtnImg: "/icon/arrow_right.png",
+                    cardbtnDisc: "Learn more"
+                },
+                {
+                    cardimg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Featured_Card_Microsoft_Microsoft_Teams_Phone_bundles%20_416x178?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1000&hei=420&qlt=100&fmt=png-alpha&fit=constrain",
+                    cardhead: "Microsoft Teams Phone",
+                    carddiscript: "Experience smart communication and seamless collaboration with the only calling solution native to Teams. ",
+                    cardbtnImg: "/icon/arrow_right.png",
+                    cardbtnDisc: "Learn more"
+                }
+            ]
         },
         section2: {
             topHead: "SOLUTIONS ",
             head: "Streamline communications—all in one place",
             secContent: {
-                meet: {
+                meet: [{
                     meethead: "Meet",
                     meetImg: "/icon/down-arrow.png",
                     meetDisc: "Make meetings more impactful with features like PowerPoint Live, Microsoft Whiteboard, and AI-generated meeting notes.2",
                     meebtn: "Learn more",
                     meetimg: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Vertical_Accordion_Meet_800x636?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=800&hei=630&qlt=100&fmt=png-alpha&fit=crop"
-                    //  meetimg:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Desktop-Solutions-Featured-Tab1-VideoThumbUpdate?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1312&hei=1056&qlt=100&fmt=png-alpha&fit=constrain"  
-                },
+                }],
                 call: {
                     callhead: "Call",
                     callImg: "/icon/down-arrow.png",
@@ -268,60 +272,162 @@ const microsoft = {
             ],
             circleBtn:
                 "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8eIB0ABwAABQAAAACfn56jpKIbHRrDw8MZHBjMzMzAwcAbHhrExcQDCQDS0tIVGBQKDgi4ubjl5eVxcnEQEw/29vbe396ur66YmJdeX13Z2di1trUlJyRRUlFlZmRERkQ5Ozg0NjN4eXhTVFLuQuL+AAADfUlEQVR4nO2dbU/bQBCE/XLFdvxSO06CAwQI9P//xiaASiDjVqrOWt3cPN8jzeh2vbt3ji9JhBBCCCGEEEIIIYQQQgghhBBC/AfjtN9Po7WK5Rg3znWdc3f31koWYlUN6Rtb92CtZRFKV6QfFK60VrMA9afBNK0OO2s93qmzC4Np6iZrQb5p3ReDaf9orcgz3w2eFtFakl/qK4NkDr/l4NvTdLAW5ZPyegXT7ZO1Ko8gg6mrrWX5o86Bwf7ZWpY/StdcG6yGW2td3oAhWnU/rXV5A5SJ8wqurHV5A5QJLoMwRIucx+B1q3ZeQaccDIYyQ2WiIzLIXiawwZzHIH2ZaFGrVjgegzhEM6IQZS8T9DmIW7WM3KBatYAoc7VqYYNDlMkge5mAAy9Tq4YnerVq4UCfg2rVQqeGnQxViCKDRBu/atVCJ9IyQd+qMW38qlULHJyD9FsWTDmI3pOptkwrqMOXsFGZCB3692T4J3r2HNThS+jgEGWqg+xlgv7wRa1a6NDnoA5fQqeGA++BxyCc6NP+6eZHwEzt7sIgCNGzxSxknHOb8e8Gw2d4LwX3AwpRDqrh/Cg59tY6FqQ/JsnaWatYFLdONsxLeFrETfLC+ph5p3hJrCUszYF+DY/JZmstYlG2r/TP0pK8Hm4f33oa3kzs+1vqvrTpio/5D+6xpefZIg+Y02zx+md+atGR9mk+nG4C5qG9/JRTiSwWKc+MH8FmcBwWO7QZRXSsFsE7UHEEKn5NqLXW5ZGyQ6s4MFmMIlD5LaJDNrJcxEWDyWIMgYosNlyBCotGRmURByqTxZlA5cpF/gYO1cWGKhcjeKLO1EUqi+ijcw3V99bhm25NzmQxhkDFFom+gzzTwHFZxKvIlYuwu4nAIlOgwj9bcllU0WCghMc2VBZhA8dlcSZQVTSCoo62gWOyGEHRaNFfaAu3ttblkZmiwWQxhkDFm4xMqzhTNKgsKhcJgA0cWS7CYxsqi7CBa8gClX8V8bENk0V8bENlcaZoyGJQzDRwTLdyx9vAcVmEUz/TX1HwXbJHa1k+wfcBM8UpvtP5zlqVV9C93J21KL/Q360OikbD5vDKYv/LWpF3vuWim6wF+edLLlaH3b9/ERwXRYPr4PSTVTN8FMOMabq4ZNw413XO3d1bK1mOcdrvp9FahRBCCCGEEEIIIYQQQgghhBBCRMtv7PxEggm3iH4AAAAASUVORK5CYII="
-            
+
         },
-        section6:{
-           sec6headTop:" GET STARTED",
-           sec6head:"Take the next step with Teams",
-           sec6Grid:[
-            {
-                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Business_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
-                grid6Head:" For business",
-                grid6Content:"Grow your customer base with communications software designed for up to 300 employees.",
-                gridbtn:"/icon/arrow_right.png",
-                gridbtnSpan:"See plans and pricing"
+        section6: {
+            sec6headTop: " GET STARTED",
+            sec6head: "Take the next step with Teams",
+            sec6Grid: [
+                {
+                    topicon: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Business_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                    grid6Head: " For business",
+                    grid6Content: "Grow your customer base with communications software designed for up to 300 employees.",
+                    gridbtn: "/icon/arrow_right.png",
+                    gridbtnSpan: "See plans and pricing"
 
-            },
-            {
-                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Personal_Use_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
-                grid6Head:"For personal use",
-                grid6Content:"Plan events, share photos, and connect with your friends, family, and community. ",
-                gridbtn:"/icon/arrow_right.png",
-                gridbtnSpan:"Try Teams for free"
+                },
+                {
+                    topicon: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Personal_Use_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                    grid6Head: "For personal use",
+                    grid6Content: "Plan events, share photos, and connect with your friends, family, and community. ",
+                    gridbtn: "/icon/arrow_right.png",
+                    gridbtnSpan: "Try Teams for free"
 
-            },
-            {
-                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Enterprise_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
-                grid6Head:"For enterprise",
-                grid6Content:"Achieve more with Teams accounts for more than 300 people.",
-                gridbtn:"/icon/arrow_right.png",
-                gridbtnSpan:"Get Started "
+                },
+                {
+                    topicon: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Enterprise_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                    grid6Head: "For enterprise",
+                    grid6Content: "Achieve more with Teams accounts for more than 300 people.",
+                    gridbtn: "/icon/arrow_right.png",
+                    gridbtnSpan: "Get Started "
 
-            },
-            {
-                topicon:"https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Education_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
-                grid6Head:" For education",
-                grid6Content:"Make learning collaborative—for both students and educators. ",
-                gridbtn:"/icon/arrow_right.png",
-                gridbtnSpan:"Learn more"
+                },
+                {
+                    topicon: "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/For_Education_32x32?resMode=sharp2&op_usm=1.5,0.65,15,0&qlt=85",
+                    grid6Head: " For education",
+                    grid6Content: "Make learning collaborative—for both students and educators. ",
+                    gridbtn: "/icon/arrow_right.png",
+                    gridbtnSpan: "Learn more"
 
-            }
-           
-           ]
+                }
+
+            ]
         },
-        footerPrev:{
-            preavTop:"<a>[1]</a> AI-generated meeting notes are currently available in <a>Microsoft Teams Premium </a> only. ",
-            prevBot:{
-              prevTxt:"Follow Microsoft Teams",
-              prevImg1:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter-34?scl=1",
-              prevImg2:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Instagram%202x?scl=1",
-              prevImg3:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube%202x?scl=1",
-              prevImg4:"https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blog?scl=1"
+        footerPrev: {
+            preavTop: "<a>[1]</a> AI-generated meeting notes are currently available in <a>Microsoft Teams Premium </a> only. ",
+            prevBot: [{
+                prevTxt: "Follow Microsoft Teams",
+                prevImg1: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Twitter-34?scl=1",
+                prevImg2: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Instagram%202x?scl=1",
+                prevImg3: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/YouTube%202x?scl=1",
+                prevImg4: "https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Blog?scl=1"
+            }]
+        },
+
+
+
+    },
+    footer: {
+        footerDivision: [
+            {
+                divHead: "What's new",
+                footerItem: [
+                    " Surface Pro",
+                    "Surface Laptop",
+                    "Surface Laptop Studio 2",
+                    "Surface Laptop Go 3",
+                    "Microsoft Copilot",
+                    "AI in Windows",
+                    "Explore Microsoft products",
+                    "Windows 11 apps"
+                ]
+            },
+            {
+                divHead: "Microsoft Store",
+                footerItem: [
+                    "Account profile",
+                    "Download Center",
+                    "Microsoft Store Support",
+                    "Returns",
+                    "Order tracking",
+                    "Certified Refurbished",
+                    "Microsoft Store Promise",
+                    "Flexible Payments"
+                ]
+            },
+            {
+                divHead: "Education",
+                footerItem: [
+                    " Microsoft in education",
+                    " Devices for education",
+                    " Microsoft Teams for Education",
+                    " Microsoft 365 Education",
+                    "How to buy for your school",
+                    " Educator training and development",
+                    " Deals for students and parents",
+                    "Azure for students"
+                ]
+            },
+            {
+                divHead: "Business",
+                footerItem: [
+                    "Microsoft Cloud",
+                    "Microsoft Security",
+                    "Dynamics 365",
+                    "Microsoft 365",
+                    "Microsoft Power Platform",
+                    "Microsoft Teams",
+                    "Copilot for Microsoft 365",
+                    "Small Business"
+                ]
+            },
+            {
+                divHead: "Developer & IT",
+                footerItem: [
+                    "Azure",
+                    "Developer Center",
+                    "Documentation",
+                    "Microsoft Learn",
+                    "Microsoft Tech Community",
+                    "Azure Marketplace",
+                    "AppSource",
+                    "Visual Studio"
+                ]
+            },
+            {
+                divHead: "Company",
+                footerItem: [
+                    "Careers",
+                    "About Microsoft",
+                    "Company news",
+                    "Privacy at Microsoft",
+                    "Investors",
+                    " Diversity and inclusion",
+                    "Accessibility",
+                    "Sustainability"
+                ]
             }
+        ],
+        footerBottom: {
+            footLeft: {
+                img1: "/icon/world.png",
+                img1txt: "English (United States)",
+                img2: "/icon/fott.svg",
+                img2txt: "Your Privacy Choices",
+                txt3: "Consumer Health Privacy"
+            },
+            footRight: [
+                "Sitemap",
+                "Contact Microsoft",
+                " Privacy",
+                "Terms of use",
+                "Trademarks",
+                " Safety & eco ",
+                "  Recycling ",
+                " About our ads ",
+                " © Microsoft 2024"
+            ]
         }
-
-
-
     }
 }
 document.addEventListener('DOMContentLoaded', function () {
@@ -381,11 +487,22 @@ document.addEventListener('DOMContentLoaded', function () {
         const mobileHide = document.getElementById("mobile-hide")
         microsoft.stickyNav.stickynavul.forEach(item => {
             const stickyItem = document.createElement("li")
+            stickyItem.classList.add("list-item")
+
             stickyItem.innerHTML =
                 `<a href="${item.link}">
             ${item.txt}</a>`
             mobileHide.appendChild(stickyItem)
         })
+        const stickyNavitem = document.querySelector(".list-item")
+
+        stickyNavitem.addEventListener('click', function () {
+            stickyNavitem.style.border = stickyNavitem.style.border === "3px dotted" ? "" : "3px  dotted"
+        })
+
+
+
+
         const stickynavBtn = document.getElementById("sticky-btn")
         stickynavBtn.innerHTML = microsoft.stickyNav.stickynavbtn
 
@@ -394,6 +511,8 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = url
 
         })
+
+
         const mobileSpan = document.getElementById("hide-span")
         mobileSpan.innerHTML = microsoft.stickyNav.mobileFeature
 
@@ -403,93 +522,77 @@ document.addEventListener('DOMContentLoaded', function () {
         const head1 = document.getElementById("h2")
         head1.innerHTML = microsoft.main.section1.head
 
-        // card one
-        const item1img = document.getElementById("card-img1")
-        item1img.src = microsoft.main.section1.itemone.card1img
-        const item1head = document.getElementById("head1")
-        item1head.innerHTML = microsoft.main.section1.itemone.card1head
-        const item1Disc = document.getElementById("cardDisc1")
-        item1Disc.innerHTML = microsoft.main.section1.itemone.card1discript
-        const item1btn = document.getElementById("cardbtn")
-        item1btn.src = microsoft.main.section1.itemone.cardbtnImg
-        const itemBtnDisc = document.getElementById("btnDisc")
-        itemBtnDisc.innerHTML = microsoft.main.section1.itemone.cardbtnDisc
+
+        const cardSection = document.querySelector(".section1-padding")
+        microsoft.main.section1.cards.forEach(item => {
+            const cardItem = document.createElement("div")
+            cardItem.classList.add("section1-item")
+            cardItem.innerHTML =
+                `<div class="cardtop-padding"><img src=${item.cardimg}></div>
+            <div class="card-content"><div><h3>${item.cardhead}</h3><p>${item.carddiscript}</p></div>
+            <div class="card-footer"><div class="card-btn"><img src=${item.cardbtnImg}></div><p>${item.cardbtnDisc}</p></div></div>`
+            cardSection.appendChild(cardItem)
+        })
+
+        const item1btn = document.querySelector(".card-btn")
         item1btn.addEventListener('click', function () {
             const url = 'https://techcommunity.microsoft.com/t5/copilot-for-microsoft-365/prompt-like-a-pro-with-microsoft-copilot-in-teams/ba-p/4141986'
             window.location.href = url
 
         })
 
-        // card2
-        const item2img = document.getElementById("card-img2")
-        item2img.src = microsoft.main.section1.itemtwo.card2img
-        const item2head = document.getElementById("head2")
-        item2head.innerHTML = microsoft.main.section1.itemtwo.card2head
-        const item2Disc = document.getElementById("cardDisc2")
-        item2Disc.innerHTML = microsoft.main.section1.itemtwo.card2discript
-        const item2btn = document.getElementById("cardbtn2")
-        item2btn.src = microsoft.main.section1.itemone.cardbtnImg
-        const item2BtnDisc = document.getElementById("btnDisc2")
-        item2BtnDisc.innerHTML = microsoft.main.section1.itemone.cardbtnDisc
+        const item2btn = document.querySelector(".card-btn")
         item2btn.addEventListener('click', function () {
             const url = 'https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh'
             window.location.href = url
 
         })
-        // card3
-        const item3img = document.getElementById("card-img3")
-        item3img.src = microsoft.main.section1.itemthree.card3img
-        const item3head = document.getElementById("head3")
-        item3head.innerHTML = microsoft.main.section1.itemthree.card3head
-        const item3Disc = document.getElementById("cardDisc3")
-        item3Disc.innerHTML = microsoft.main.section1.itemthree.card3discript
-        const item3btn = document.getElementById("cardbtn3")
-        item3btn.src = microsoft.main.section1.itemone.cardbtnImg
-        const item3BtnDisc = document.getElementById("btnDisc3")
-        item3BtnDisc.innerHTML = microsoft.main.section1.itemone.cardbtnDisc
+
+        const item3btn = document.querySelector(".card-btn")
         item3btn.addEventListener('click', function () {
             const url = 'https://www.microsoft.com/en-us/microsoft-teams/microsoft-teams-phone'
             window.location.href = url
 
         })
-
         //   section2
         const Tophead = document.getElementById("top-head2")
         Tophead.innerHTML = microsoft.main.section2.topHead
-        const head2 = document.getElementById("s2h2")
+        const head2 = document.createElement("h2")
         head2.innerHTML = microsoft.main.section2.head
-        // meet
-        const meethead = document.getElementById("meetH3")
-        meethead.innerHTML = microsoft.main.section2.secContent.meet.meethead
-        const meetImg = document.getElementById("meet-img")
-        meetImg.src = microsoft.main.section2.secContent.meet.meetImg
-        const meetdisc = document.getElementById("meet-disc")
-        meetdisc.innerHTML = microsoft.main.section2.secContent.meet.meetDisc
-        const meetbtn = document.getElementById("meet-btn")
-        meetbtn.innerHTML = microsoft.main.section2.secContent.meet.meebtn
-        const meetimg = document.getElementById("collab-img")
-        meetimg.src = microsoft.main.section2.secContent.meet.meetimg
+        const meetItem = document.querySelector(".meet")
+        microsoft.main.section2.secContent.meet.forEach(item => {
+            const meetContent = document.createElement("div")
+            meetContent.classList.add("meet-cont")
+            meetContent.innerHTML = `<div class="meet-head"><h3>${item.meethead}</h3><img src=${item.meetImg}></div>
+        <div class="meet-item"><div class="meet-disc"><p>${item.meetDisc}</p></div>
+        <div class="big-img"><div class="meet-btn"><span>${item.meebtn}</span></div>
+        <div class="collab-img"><div class="class-img"><img src=${item.meetimg}></div></div>`
+
+            meetItem.appendChild(meetContent)
+
+        })
+
+
+
 
         // call
         const callHead = document.getElementById("h3call")
         callHead.innerHTML = microsoft.main.section2.secContent.call.callhead
         const callimg = document.getElementById("call-img")
-        callimg.src = microsoft.main.section2.secContent.meet.meetImg
+        callimg.src = microsoft.main.section2.secContent.call.callImg
         // collab
         const collabHead = document.getElementById("h3collab")
         collabHead.innerHTML = microsoft.main.section2.secContent.collab.colabhead
         const callabimg = document.getElementById("callab-img")
-        callabimg.src = microsoft.main.section2.secContent.meet.meetImg
+        callabimg.src = microsoft.main.section2.secContent.call.callImg
         // chat
         const chatbHead = document.getElementById("h3chat")
         chatbHead.innerHTML = microsoft.main.section2.secContent.collab.colabhead
         const chatimg = document.getElementById("chat-img")
-        chatimg.src = microsoft.main.section2.secContent.meet.meetImg
+        chatimg.src = microsoft.main.section2.secContent.call.callImg
 
 
-        //   section3
-        //    const thrdbg=document.getElementById("section3-bg")
-        //    thrdbg.src=microsoft.main.section3.sec3bg
+
 
         const sec3head = document.getElementById("top-head3")
         sec3head.innerHTML = microsoft.main.section3.topHead
@@ -637,35 +740,101 @@ document.addEventListener('DOMContentLoaded', function () {
         rndBtn1.innerHTML = `<img src=${microsoft.main.section5.circleBtn}>`
         roundBtn.appendChild(rndBtn1)
 
-        const rndBtn2=document.createElement("button")
-         rndBtn2.innerHTML=`<img src=${microsoft.main.section5.circleBtn}>`
-         roundBtn.appendChild(rndBtn2)
+        const rndBtn2 = document.createElement("button")
+        rndBtn2.innerHTML = `<img src=${microsoft.main.section5.circleBtn}>`
+        roundBtn.appendChild(rndBtn2)
 
 
 
         //  section6
-        const sec6topHead=document.getElementById("top-head6")
-        sec6topHead.innerHTML=microsoft.main.section6.sec6headTop
-        const sec6Head=document.getElementById("content-head6")
-        sec6Head.innerHTML=microsoft.main.section6.sec6head
+        const sec6topHead = document.getElementById("top-head6")
+        sec6topHead.innerHTML = microsoft.main.section6.sec6headTop
+        const sec6Head = document.getElementById("content-head6")
+        const sec6H2 = document.createElement("h2")
+        sec6H2.innerHTML = microsoft.main.section6.sec6head
+        sec6Head.appendChild(sec6H2)
 
-        const section6grid=document.querySelector(".section6-grid")
-        microsoft.main.section6.sec6Grid.forEach(item=>{
-            const gridcard=document.createElement("div")
+        const section6grid = document.querySelector(".section6-grid")
+        microsoft.main.section6.sec6Grid.forEach(item => {
+            const gridcard = document.createElement("div")
             gridcard.classList.add("card")
-            gridcard.innerHTML=
-            `<div><div class="icon-img"> <img src="${item.topicon}"></div>
+            gridcard.innerHTML =
+                `<div><div class="icon-img"> <img src="${item.topicon}"></div>
             <h4>${item.grid6Head}</h4> <p>${item.grid6Content}</p></div>
             <div><button><img src=${item.gridbtn}></button>${item.gridbtnSpan}</div>`
             section6grid.appendChild(gridcard)
-        
 
-            // footerprev
-            const prevtop=document.querySelector(".prev-top")
-            const topCont=document.createElement("div")
+
+        })
+
+        // footerprev
+        const prevtop = document.querySelector(".prev-top")
+        const topCont = document.createElement("div")
+        topCont.innerHTML = microsoft.main.footerPrev.preavTop
+        prevtop.appendChild(topCont)
+
+        const footerPrevious = document.getElementById("footerPrev")
+        microsoft.main.footerPrev.prevBot.forEach(item => {
+            const prevbottom = document.querySelector(".prev-bottom")
+            prevbottom.innerHTML = `<p>${item.prevTxt}</p><img src=${item.prevImg1}>
+                <img src=${item.prevImg2}><img src=${item.prevImg3}><img src=${item.prevImg4}>`
+            footerPrevious.appendChild(prevbottom)
+        })
+
+        //    footer
+        const footerTop = document.querySelector(".footer-top")
+        microsoft.footer.footerDivision.forEach(item => {
+            const footerDiv = document.createElement("div")
+            footerDiv.classList.add("footer-grid")
+            footerTop.appendChild(footerDiv)
+            const divHead = document.createElement("span")
+            divHead.innerHTML = item.divHead
+            footerDiv.appendChild(divHead)
+
+            const footerItem = document.createElement("ul")
+            footerDiv.appendChild(footerItem)
+            item.footerItem.forEach(item => {
+                const listItem = document.createElement("li")
+                listItem.innerHTML = item
+                footerItem.appendChild(listItem)
+
+
+            })
+        })
+
+        const footerBottom = document.querySelector(".footer-bottom")
+        const footerLeft = document.createElement("div")
+        footerLeft.classList.add("footer-left")
+        footerBottom.appendChild(footerLeft)
+        const footerBtm1 = document.createElement("div")
+        footerBtm1.innerHTML = `<img src=${microsoft.footer.footerBottom.footLeft.img1}><span>${microsoft.footer.footerBottom.footLeft.img1txt}</span>`
+        const footerBtm2 = document.createElement("div")
+        footerBtm2.innerHTML = `<img src=${microsoft.footer.footerBottom.footLeft.img2}><span>${microsoft.footer.footerBottom.footLeft.img2txt}</span>`
+        const footerBtm3 = document.createElement("div")
+        footerBtm3.innerHTML = `<span>${microsoft.footer.footerBottom.footLeft.txt3}</span>`
+
+        footerLeft.appendChild(footerBtm1)
+        footerLeft.appendChild(footerBtm2)
+        footerLeft.appendChild(footerBtm3)
+
+        const footright = document.createElement("div")
+        footright.classList.add("footer-right")
+        footerBottom.appendChild(footright)
+        const rightul = document.createElement("ul")
+        rightul.classList.add("right-ul")
+        footright.appendChild(rightul)
+
+        microsoft.footer.footerBottom.footRight.forEach(item => {
+
+
+            const itemLi = document.createElement("li")
+            itemLi.innerHTML = item
+
+            rightul.appendChild(itemLi)
         })
 
     }
+
     buildTeamsPage()
 })
 
